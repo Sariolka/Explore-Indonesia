@@ -49,15 +49,16 @@
   justify-content: center;
   align-items: center;
   padding: 100px;
+  cursor: default;
 
   @media screen and (max-width: 1024px) {
     padding-right: 50px;
     padding-left: 50px;
   }
 
-  @media screen and (max-width: 719px) {
-    padding-left: 10px;
-    padding-right: 10px;
+  @media screen and (max-width: 1023px) {
+    padding-left: 30.5px;
+    padding-right: 30.5px;
   }
 
   &__title {

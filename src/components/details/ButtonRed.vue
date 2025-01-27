@@ -17,7 +17,6 @@ const props = defineProps<{
 
 <style scoped lang="scss">
 .red-button {
-  padding: 16px 24px;
   border-radius: 32px;
   background-color: #dd2242;
   color: #fff;
@@ -34,7 +33,6 @@ const props = defineProps<{
   cursor: pointer;
 
   &_type-big {
-    padding: 20px;
     border-radius: 211px;
     font-size: 20px;
     line-height: 30px;

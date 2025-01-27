@@ -189,6 +189,7 @@ const computerYear = new Date().getFullYear()
   &__img-up {
     object-position: center;
     object-fit: contain;
+    cursor: pointer;
   }
 }
 </style>
