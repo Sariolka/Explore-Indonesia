@@ -27,14 +27,18 @@ const props = defineProps<{
     line-height: 18.75px;
     text-align: left;
     color: #dd2242;
-    margin-bottom: 15px;
+    margin-bottom: 11px;
+
+    @media screen and (max-width: 1023px) {
+      margin-bottom: 5px;
+    }
   }
 
   &__title {
     font-family: 'DMSans', sans-serif;
     font-size: 26.41px;
     font-weight: 700;
-    line-height: 41.08px;
+    line-height: 40.08px;
     text-align: left;
     color: #fff;
   }
@@ -46,6 +50,11 @@ const props = defineProps<{
     line-height: 28px;
     letter-spacing: 0.5px;
     color: #939393;
+
+    @media screen and (max-width: 1279px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 }
 </style>

@@ -6,6 +6,7 @@ import ExploreBlock from '@/components/blocks/ExploreBlock.vue'
 import MapBlock from '@/components/blocks/MapBlock.vue'
 import VideoBlock from '@/components/blocks/VideoBlock.vue'
 import HeroBlock from '@/components/blocks/HeroBlock.vue'
+import PlansBlock from '@/components/blocks/PlansBlock.vue'
 const scrollUp = () => {
   if (window.pageYOffset > 0) {
     window.scrollBy(0, -75)
@@ -24,7 +25,7 @@ const scrollUp = () => {
     <MapBlock />
     <VideoBlock />
     <PhotoGalleryBlock />
-    <!--    <PlansBlock />-->
+    <PlansBlock />
   </main>
   <FooterBlock @scrollUp="scrollUp" />
 </template>

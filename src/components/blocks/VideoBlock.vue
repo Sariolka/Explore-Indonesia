@@ -50,6 +50,7 @@ import VideoCard from '@/components/details/VideoCard.vue'
   @media screen and (max-width: 719px) {
     padding: 85px 30px;
   }
+
   &__title {
     font-family: 'DMSans', sans-serif;
     font-size: 42px;
@@ -85,7 +86,7 @@ import VideoCard from '@/components/details/VideoCard.vue'
     padding: 48px;
     border-radius: 50%;
     background-color: #dd2242;
-    color: #fff;
+
     @media screen and (max-width: 719px) {
       padding: 33.5px;
       top: 31%;
@@ -99,6 +100,7 @@ import VideoCard from '@/components/details/VideoCard.vue'
     border-radius: 10px;
     aspect-ratio: 1056/594;
     object-fit: cover;
+
     @media screen and (max-width: 719px) {
       aspect-ratio: 314/192;
     }

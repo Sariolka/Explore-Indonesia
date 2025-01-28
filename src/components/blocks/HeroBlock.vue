@@ -7,11 +7,17 @@ import HeroItem from '@/components/details/HeroItem.vue'
   <section class="hero">
     <header class="hero__header">
       <div class="hero__left-side">
-        <img class="hero__logo" src="@/components/images/logo.svg" alt="Logo" />
-        <a href="#" class="hero__link">destinations</a>
-        <a href="#" class="hero__link">experiences</a>
-        <a href="#" class="hero__link">about</a>
-        <a href="#" class="hero__link">gallery</a>
+        <div class="hero__logo-container">
+          <img class="hero__logo" src="@/components/images/logo.svg" alt="Logo" />
+          <p class="hero__text">explore indonesia</p>
+        </div>
+
+        <div class="hero__links">
+          <a href="#" class="hero__link">destinations</a>
+          <a href="#" class="hero__link">experiences</a>
+          <a href="#" class="hero__link">about</a>
+          <a href="#" class="hero__link">gallery</a>
+        </div>
       </div>
       <div class="hero__right-side">
         <button class="hero__btn hero__btn_type-search" aria-label="Search"></button>
@@ -22,6 +28,7 @@ import HeroItem from '@/components/details/HeroItem.vue'
       <div class="hero__wrapper">
         <div class="hero__line-up"></div>
         <div class="hero__line-down"></div>
+        <span class="hero__wrapper-count">01</span>
       </div>
       <div class="hero__title-container">
         <h1 class="hero__title">explore indonesia</h1>
@@ -67,48 +74,123 @@ import HeroItem from '@/components/details/HeroItem.vue'
 .hero {
   display: flex;
   flex-direction: column;
-  background-image: url('@/components/images/hero.png');
+  background: linear-gradient(215.79deg, rgba(0, 0, 0, 0.31) 29.66%, rgba(0, 0, 0, 0.29) 84.2%),
+    url('@/components/images/hero.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   &__header {
     display: flex;
-    padding: 28px 140px 28px 25px;
+    padding: 28px 135px 28px 27px;
     width: 100%;
     justify-content: space-between;
-    margin-bottom: 110px;
+    margin-bottom: 126px;
+    @media screen and (max-width: 1023px) {
+      margin-bottom: 55px;
+    }
+
+    @media screen and (max-width: 719px) {
+      padding: 50px 35px 28px 20px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__logo-container {
+    display: flex;
+    margin-left: 10px;
+    align-items: end;
+    gap: 7px;
+    max-width: 166px;
+    background: linear-gradient(180deg, rgba(1, 132, 149, 0) 7.41%, #018394 83.33%);
+  }
+
+  &__logo {
+    @media screen and (max-width: 1023px) {
+      width: 21.32px;
+    }
+  }
+
+  &__text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 23.96px;
+    font-weight: 900;
+    line-height: 19.29px;
+    letter-spacing: 0.31527093052864075px;
+    color: #fff;
+    text-transform: uppercase;
+    @media screen and (max-width: 1023px) {
+      font-size: 20.84px;
+      line-height: 16.78px;
+      letter-spacing: 0.27px;
+    }
   }
 
   &__left-side {
     display: flex;
-    align-items: center;
+    align-items: end;
+    gap: 71px;
+
+    @media screen and (max-width: 1279px) {
+      gap: 20px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    align-items: end;
     gap: 62px;
+
+    @media screen and (max-width: 1279px) {
+      gap: 20px;
+    }
+
+    @media screen and (max-width: 1023px) {
+      display: none;
+    }
   }
 
   &__right-side {
     display: flex;
     align-items: start;
-    gap: 35px;
-    padding-top: 10px;
+    gap: 39px;
+    padding-top: 8px;
+
+    @media screen and (max-width: 719px) {
+      gap: 25px;
+    }
   }
 
   &__btn-start {
     width: 271px;
     height: 82px;
+
+    @media screen and (max-width: 719px) {
+      width: 100%;
+      height: 59px;
+    }
   }
 
   &__content {
     display: flex;
     align-items: start;
-    margin-bottom: 195px;
+    margin-bottom: 145px;
+
+    @media screen and (max-width: 1023px) {
+      justify-content: center;
+      margin-bottom: 49px;
+    }
   }
 
   &__wrapper {
-    margin-right: 201px;
+    margin-right: 190px;
     display: flex;
     flex-direction: column;
     padding-left: 69px;
+
+    @media screen and (max-width: 1023px) {
+      display: none;
+    }
   }
 
   &__line-up {
@@ -173,7 +255,7 @@ import HeroItem from '@/components/details/HeroItem.vue'
   }
 
   &__title {
-    font-family: 'DMSans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 120px;
     font-weight: 900;
     line-height: 130px;
@@ -181,8 +263,15 @@ import HeroItem from '@/components/details/HeroItem.vue'
     color: #fff;
     text-transform: uppercase;
     max-width: 627.33px;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 35px;
+    margin-bottom: 22px;
+
+    @media screen and (max-width: 719px) {
+      font-size: 58.15px;
+      line-height: 63px;
+      max-width: 314px;
+      margin-bottom: 9px;
+    }
   }
 
   &__list {
@@ -191,9 +280,27 @@ import HeroItem from '@/components/details/HeroItem.vue'
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 67%;
-    padding: 40px 130px 40px 68px;
+    width: 66.5%;
+    padding: 40px 122px 38px 68px;
+
+    @media screen and (max-width: 1360px) {
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+
+    @media screen and (max-width: 1023px) {
+      flex-direction: column;
+      align-items: start;
+      width: 40%;
+      gap: 35px;
+    }
+
+    @media screen and (max-width: 719px) {
+      width: 314px;
+      padding-left: 30px;
+    }
   }
+
   &__video {
     position: relative;
     background-image: url('@/components/images/hero2.png');
@@ -201,15 +308,22 @@ import HeroItem from '@/components/details/HeroItem.vue'
     background-position: center;
     background-size: cover;
     z-index: 1;
-    width: 417px;
-    aspect-ratio: 417/254;
+    width: 417.22px;
+    aspect-ratio: 417.22/254;
     height: auto;
+
+    @media screen and (max-width: 719px) {
+      max-width: 314px;
+      width: 100%;
+      aspect-ratio: 314/191;
+    }
   }
+
   &__play {
     position: absolute;
     top: 34%;
     left: 41.5%;
-    background-image: url('@/components/icons/play.svg');
+    background-image: url('@/components/icons/play-big.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 30%;
@@ -231,6 +345,15 @@ import HeroItem from '@/components/details/HeroItem.vue'
     align-items: end;
     justify-content: end;
     width: 100%;
+
+    @media screen and (max-width: 719px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-left: 30.5px;
+      padding-right: 30.5px;
+      padding-bottom: 40px;
+    }
   }
 
   &__footer {
@@ -240,9 +363,26 @@ import HeroItem from '@/components/details/HeroItem.vue'
 
   &__social {
     transform: rotate(-90deg);
-    margin-bottom: 5px;
+    margin-bottom: 2px;
     width: 21px;
-    margin-left: 57px;
+    margin-left: 63px;
+    display: flex;
+
+    @media screen and (max-width: 1279px) {
+      display: none;
+    }
+  }
+
+  &__wrapper-count {
+    font-family: 'DMSans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.83px;
+    color: #fff;
+    box-shadow: 0 0 4px 0 #0000001a;
+    transform: rotate(-90deg);
+    margin-top: 17px;
+    padding-bottom: 10px;
   }
 }
 </style>

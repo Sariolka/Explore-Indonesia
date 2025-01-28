@@ -58,7 +58,10 @@ const props = defineProps<{
     background-color: transparent;
     border: none;
     cursor: pointer;
-    color: #fff;
+
+    @media screen and (max-width: 1279px) {
+      top: 80px;
+    }
   }
 
   &__content {

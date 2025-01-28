@@ -12,10 +12,9 @@ import map2 from '@/components/images/map2.png'
       dolor sit amet, laoreet elit. Donec mauris tortor.
     </p>
     <ButtonRed title="Learn More" class="map__btn-more" />
-    <div class="map__images">
-      <img class="map__image-left" :src="map1" alt="Изолинии слева" />
-      <img class="map__image-right" :src="map2" alt="Изолинии справа" />
-    </div>
+
+    <img class="map__image-left" :src="map1" alt="Изолинии слева" />
+    <img class="map__image-right" :src="map2" alt="Изолинии справа" />
   </section>
 </template>
 
@@ -30,7 +29,9 @@ import map2 from '@/components/images/map2.png'
   padding-bottom: 255px;
 
   @media screen and (max-width: 719px) {
-    padding: 176px 20px 120px;
+    padding-top: 176px;
+    padding-bottom: 120px;
+    overflow: hidden;
   }
 
   &__image-left {
@@ -45,10 +46,14 @@ import map2 from '@/components/images/map2.png'
     z-index: -1;
 
     @media screen and (max-width: 1023px) {
-      width: 150%;
+      width: 100%;
     }
 
     @media screen and (max-width: 719px) {
+      width: 150%;
+    }
+
+    @media screen and (max-width: 480px) {
       top: -226px;
       left: 130px;
       transform: rotate(40deg);
@@ -78,8 +83,9 @@ import map2 from '@/components/images/map2.png'
     }
 
     @media screen and (max-width: 719px) {
-      width: 110%;
+      width: 120%;
       height: auto;
+      bottom: -20px;
     }
   }
 
@@ -123,22 +129,8 @@ import map2 from '@/components/images/map2.png'
     height: 64px;
     @media screen and (max-width: 719px) {
       height: 73px;
-      width: 100%;
+      width: calc(100% - 40px);
     }
   }
-
-  //&__image-left {
-  //  position: absolute;
-  //  top: 0;
-  //  left: 0;
-  //  width: 116%;
-  //  z-index: -1;
-  //}
-  //
-  //&__image-right {
-  //  position: absolute;
-  //  width: 100%;
-  //  height: auto;
-  //}
 }
 </style>

@@ -49,11 +49,6 @@ import ButtonLearnMore from '@/components/details/ButtonRed.vue'
   background-color: #010a20;
   cursor: default;
 
-  @media screen and (max-width: 1023px) {
-    padding-left: 30.5px;
-    padding-right: 30.5px;
-  }
-
   &__title {
     display: none;
     opacity: 0;
@@ -94,6 +89,7 @@ import ButtonLearnMore from '@/components/details/ButtonRed.vue'
       background-size: cover;
       background-position: center;
     }
+
     @media screen and (max-width: 1279px) {
       padding-right: 20px;
       padding-left: 20px;
