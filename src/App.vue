@@ -1,8 +1,12 @@
 <script setup lang="ts">
 import FooterBlock from '@/components/blocks/FooterBlock.vue'
-import PlansBlock from '@/components/blocks/PlansBlock.vue'
 import PhotoGalleryBlock from '@/components/blocks/PhotoGalleryBlock.vue'
 import ArticlesBlock from '@/components/blocks/ArticlesBlock.vue'
+import ExploreBlock from '@/components/blocks/ExploreBlock.vue'
+import MapBlock from '@/components/blocks/MapBlock.vue'
+import VideoBlock from '@/components/blocks/VideoBlock.vue'
+import HeroBlock from '@/components/blocks/HeroBlock.vue'
+import PlansBlock from '@/components/blocks/PlansBlock.vue'
 const scrollUp = () => {
   if (window.pageYOffset > 0) {
     window.scrollBy(0, -75)
@@ -15,9 +19,13 @@ const scrollUp = () => {
   <header></header>
 
   <main>
+    <HeroBlock />
     <ArticlesBlock />
+    <ExploreBlock />
+    <MapBlock />
+    <VideoBlock />
     <PhotoGalleryBlock />
-    <!--    <PlansBlock />-->
+    <PlansBlock />
   </main>
   <FooterBlock @scrollUp="scrollUp" />
 </template>
