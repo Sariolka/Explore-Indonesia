@@ -19,10 +19,10 @@ const scrollUp = () => {
   <header></header>
 
   <main>
-    <HeroBlock />
-    <ArticlesBlock />
+    <!--    <HeroBlock />-->
+    <!--    <ArticlesBlock />-->
     <ExploreBlock />
-    <MapBlock />
+    <!--    <MapBlock />-->
     <VideoBlock />
     <PhotoGalleryBlock />
     <PlansBlock />
