@@ -25,7 +25,7 @@ const props = defineProps<{
   display: flex;
   gap: 50px;
 
-  @media screen and (max-width: 1279px) {
+  @media screen and (max-width: 1366px) {
     flex-direction: column;
     align-items: center;
     gap: 29px;
@@ -42,7 +42,7 @@ const props = defineProps<{
     border-radius: 5px;
     object-fit: cover;
 
-    @media screen and (max-width: 1279px) {
+    @media screen and (max-width: 1366px) {
       max-width: 314px;
       aspect-ratio: 314/176;
     }
@@ -59,7 +59,7 @@ const props = defineProps<{
     border: none;
     cursor: pointer;
 
-    @media screen and (max-width: 1279px) {
+    @media screen and (max-width: 1366px) {
       top: 80px;
     }
   }
@@ -71,7 +71,7 @@ const props = defineProps<{
     align-items: start;
     max-width: 336px;
     gap: 24px;
-    @media screen and (max-width: 1279px) {
+    @media screen and (max-width: 1366px) {
       text-align: center;
       align-items: center;
       gap: 15px;
@@ -84,7 +84,7 @@ const props = defineProps<{
     font-weight: 700;
     line-height: 27px;
     color: #ffffff;
-    @media screen and (max-width: 1279px) {
+    @media screen and (max-width: 1366px) {
       font-size: 22px;
       line-height: 44px;
     }
@@ -97,7 +97,7 @@ const props = defineProps<{
     line-height: 28px;
     color: #ffffff;
     opacity: 70%;
-    @media screen and (max-width: 1279px) {
+    @media screen and (max-width: 1366px) {
       font-size: 16px;
       line-height: 24px;
       text-indent: 15px;
