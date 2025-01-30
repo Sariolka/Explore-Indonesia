@@ -87,10 +87,15 @@ import VideoCard from '@/components/details/VideoCard.vue'
     border-radius: 50%;
     background-color: #dd2242;
 
-    @media screen and (max-width: 719px) {
+    @media screen and (max-width: 1023px) {
       padding: 33.5px;
-      top: 31%;
-      left: 40%;
+      top: 40%;
+      left: 44%;
+    }
+
+    @media screen and (max-width: 819px) {
+      top: 32%;
+      left: 42%;
     }
   }
 

@@ -219,12 +219,13 @@ const handleToggleText = (index: number) => {
     display: flex;
     align-items: start;
     margin-top: 12px;
-    //gap: 45px;
+    gap: 45px;
     margin-bottom: 9px;
 
     @media screen and (max-width: 1366px) {
       flex-direction: column;
       align-items: center;
+      gap: 0;
     }
 
     @media screen and (max-width: 719px) {
