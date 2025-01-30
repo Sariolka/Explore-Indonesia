@@ -47,12 +47,14 @@ const computerYear = new Date().getFullYear()
   }
 
   @media screen and (max-width: 1023px) {
-    flex-direction: column;
+    align-items: end;
   }
 
   @media screen and (max-width: 719px) {
+    flex-direction: column;
     padding-bottom: 85px;
     padding-top: 145px;
+    align-items: center;
   }
 
   &__nav-container {
@@ -65,12 +67,14 @@ const computerYear = new Date().getFullYear()
     }
 
     @media screen and (max-width: 1023px) {
-      width: 100%;
+      flex-direction: column;
+      align-items: start;
       justify-content: space-between;
     }
 
     @media screen and (max-width: 719px) {
       flex-direction: column;
+      align-items: center;
     }
   }
 
@@ -177,9 +181,11 @@ const computerYear = new Date().getFullYear()
     height: 104px;
     box-shadow: 0 7px 10px 0 #00000033;
     border-radius: 50%;
+
     @media screen and (max-width: 1023px) {
       bottom: 115px;
     }
+
     @media screen and (max-width: 719px) {
       right: 55px;
       bottom: 575px;
