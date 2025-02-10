@@ -347,7 +347,7 @@ const handleToggleText = (index: number) => {
     position: absolute;
     top: 80px;
     left: 50%;
-    background-image: url('@/components/icons/play.svg');
+    background-image: url('@/images/icons/play.svg');
     width: 16px;
     height: 18px;
     background-color: transparent;

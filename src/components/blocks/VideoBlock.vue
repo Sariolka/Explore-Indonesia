@@ -76,7 +76,7 @@ import VideoCard from '@/components/details/VideoCard.vue'
     position: absolute;
     top: 41.4%;
     left: 45.5%;
-    background-image: url('@/components/icons/play.svg');
+    background-image: url('@/images/icons/play.svg');
     background-repeat: no-repeat;
     background-position: center;
     width: 16px;

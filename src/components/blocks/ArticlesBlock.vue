@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import art from '../images/art1.png'
+import art from '@/images/art1.png'
 import ButtonLearnMore from '@/components/details/ButtonRed.vue'
 </script>
 
@@ -78,14 +78,14 @@ import ButtonLearnMore from '@/components/details/ButtonRed.vue'
 
     &_type-top {
       background: linear-gradient(360deg, #010a20 0%, rgba(1, 10, 32, 0) 100%),
-        url('../images/back2.png');
+        url('@/images/back2.png');
       background-size: cover;
       background-position: center;
     }
 
     &_type-bottom {
       background: linear-gradient(180deg, #010a20 0%, rgba(1, 10, 32, 0) 100%),
-        url('../images/back1.png');
+        url('@/images/back1.png');
       background-size: cover;
       background-position: center;
     }
