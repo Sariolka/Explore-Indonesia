@@ -6,7 +6,7 @@
   font-display: swap;
   src:
     local(PTsans-Regular),
-    url('../fonts/DMSans-Regular.ttf') format('truetype');
+    url('DMSans-Regular.ttf') format('truetype');
 }
 
 /* DMSans 700  */
@@ -17,7 +17,7 @@
   font-display: swap;
   src:
     local(PTsans-Bold),
-    url('../fonts/DMSans-Bold.ttf') format('truetype');
+    url('DMSans-Bold.ttf') format('truetype');
 }
 
 /* Roboto 900 */
@@ -29,7 +29,7 @@
   font-display: swap;
   src:
     local(roboto),
-    url('../fonts/Roboto-Black.woff2') format('woff2'),
+    url('Roboto-Black.woff2') format('woff2'),
     local(roboto),
-    url('../fonts/Roboto-Black.woff') format('woff');
+    url('Roboto-Black.woff') format('woff');
 }

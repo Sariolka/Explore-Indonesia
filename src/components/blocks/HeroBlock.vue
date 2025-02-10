@@ -8,7 +8,7 @@ import HeroItem from '@/components/details/HeroItem.vue'
     <header class="hero__header">
       <div class="hero__left-side">
         <div class="hero__logo-container">
-          <img class="hero__logo" src="@/components/images/logo.svg" alt="Logo" />
+          <img class="hero__logo" src="@/images/logo.svg" alt="Logo" />
           <p class="hero__text">explore indonesia</p>
         </div>
 
@@ -75,7 +75,7 @@ import HeroItem from '@/components/details/HeroItem.vue'
   display: flex;
   flex-direction: column;
   background: linear-gradient(215.79deg, rgba(0, 0, 0, 0.31) 29.66%, rgba(0, 0, 0, 0.29) 84.2%),
-    url('@/components/images/hero.png');
+    url('@/images/hero.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -219,10 +219,10 @@ import HeroItem from '@/components/details/HeroItem.vue'
     &_type-search {
       width: 30px;
       height: 30px;
-      background-image: url('@/components/icons/search.svg');
+      background-image: url('@/images/icons/search.svg');
     }
     &_type-menu {
-      background-image: url('@/components/icons/menu.svg');
+      background-image: url('@/images/icons/menu.svg');
     }
   }
 
@@ -303,7 +303,7 @@ import HeroItem from '@/components/details/HeroItem.vue'
 
   &__video {
     position: relative;
-    background-image: url('@/components/images/hero2.png');
+    background-image: url('@/images/hero2.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -323,7 +323,7 @@ import HeroItem from '@/components/details/HeroItem.vue'
     position: absolute;
     top: 34%;
     left: 41.5%;
-    background-image: url('@/components/icons/play-big.svg');
+    background-image: url('@/images/icons/play-big.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 30%;

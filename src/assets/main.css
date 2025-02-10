@@ -1,6 +1,6 @@
 @import './base.css';
-@import '@/components/vendor/fonts/fonts.css';
-@import '@/components/vendor/normalize.css';
+@import '@/vendor/fonts/fonts.css';
+@import '@/vendor/normalize.css';
 
 #app {
   margin: 0 auto;

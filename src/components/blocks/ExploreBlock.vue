@@ -2,11 +2,11 @@
 import ByTheNumbersBlock from '@/components/blocks/ByTheNumbersBlock.vue'
 import 'vue3-carousel/carousel.css'
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
-import img1 from '@/components/images/1.jpg'
-import img2 from '@/components/images/2.jpg'
-import img3 from '@/components/images/3.jpg'
-import img4 from '@/components/images/4.jpg'
-import img5 from '@/components/images/5.jpg'
+import img1 from '@/images/1.jpg'
+import img2 from '@/images/2.jpg'
+import img3 from '@/images/3.jpg'
+import img4 from '@/images/4.jpg'
+import img5 from '@/images/5.jpg'
 const data = [img1, img4, img5, img2, img3]
 const carouselConfig = {
   itemsToShow: 3,
@@ -46,7 +46,7 @@ const carouselConfig = {
 
 <style scoped lang="scss">
 .explore {
-  background-image: url('../images/explore.jpg');
+  background-image: url('@/images/explore.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 2207px;

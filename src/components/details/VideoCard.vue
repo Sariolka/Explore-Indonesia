@@ -52,7 +52,7 @@ const props = defineProps<{
     position: absolute;
     top: 70px;
     left: 50%;
-    background-image: url('@/components/icons/play.svg');
+    background-image: url('@/images/icons/play.svg');
     width: 16px;
     height: 18px;
     background-color: transparent;

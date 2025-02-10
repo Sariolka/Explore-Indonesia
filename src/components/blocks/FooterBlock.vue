@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import facebook from '@/components/icons/facebook.png'
-import google from '@/components/icons/google.png'
-import linkedin from '@/components/icons/linkedin.png'
-import logo from '@/components/images/logo-footer.svg'
-import up from '@/components/icons/union.svg'
+import facebook from '@/images/icons/facebook.png'
+import google from '@/images/icons/google.png'
+import linkedin from '@/images/icons/linkedin.png'
+import logo from '@/images/logo-footer.svg'
+import up from '@/images/icons/union.svg'
 const computerYear = new Date().getFullYear()
 </script>
 
