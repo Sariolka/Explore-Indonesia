@@ -1,29 +1,29 @@
 <script setup lang="ts">
-import ButtonRed from '@/components/details/ButtonRed.vue'
-import HeroItem from '@/components/details/HeroItem.vue'
+import ButtonRed from '@/components/ButtonRed.vue'
+import HeroItem from '@/components/HeroItem.vue'
 </script>
 
 <template>
-  <section class="hero">
-    <header class="hero__header">
+  <header class="hero">
+    <div class="hero__header">
       <div class="hero__left-side">
         <div class="hero__logo-container">
-          <img class="hero__logo" src="@/images/logo.svg" alt="Logo" />
+          <img class="hero__logo" src="../images/logo.svg" alt="Logo" />
           <p class="hero__text">explore indonesia</p>
         </div>
 
-        <div class="hero__links">
+        <nav class="hero__links">
           <a href="#" class="hero__link">destinations</a>
           <a href="#" class="hero__link">experiences</a>
           <a href="#" class="hero__link">about</a>
           <a href="#" class="hero__link">gallery</a>
-        </div>
+        </nav>
       </div>
       <div class="hero__right-side">
         <button class="hero__btn hero__btn_type-search" aria-label="Search"></button>
         <button class="hero__btn hero__btn_type-menu" aria-label="Open menu"></button>
       </div>
-    </header>
+    </div>
     <div class="hero__content">
       <div class="hero__wrapper">
         <div class="hero__line-up"></div>
@@ -67,7 +67,7 @@ import HeroItem from '@/components/details/HeroItem.vue'
         </div>
       </div>
     </div>
-  </section>
+  </header>
 </template>
 
 <style scoped lang="scss">
@@ -223,6 +223,7 @@ import HeroItem from '@/components/details/HeroItem.vue'
     }
     &_type-menu {
       background-image: url('@/images/icons/menu.svg');
+      margin-top: 2px;
     }
   }
 

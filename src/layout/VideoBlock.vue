@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import VideoCard from '@/components/details/VideoCard.vue'
+import VideoCard from '@/components/VideoCard.vue'
 </script>
 
 <template>
