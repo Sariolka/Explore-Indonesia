@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import StatisticItem from '@/components/details/StatisticItem.vue'
+import StatisticItem from '@/components/StatisticItem.vue'
 
 const data = [
   {

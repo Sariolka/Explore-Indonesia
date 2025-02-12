@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ByTheNumbersBlock from '@/components/blocks/ByTheNumbersBlock.vue'
+import ByTheNumbersBlock from '@/layout/ByTheNumbersBlock.vue'
 import 'vue3-carousel/carousel.css'
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 import img1 from '@/images/1.jpg'

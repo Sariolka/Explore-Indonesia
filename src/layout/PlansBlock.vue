@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ButtonLearnMore from '@/components/details/ButtonRed.vue'
+import ButtonLearnMore from '@/components/ButtonRed.vue'
 import { ref } from 'vue'
 
 const isTextShown1 = ref(false)
