@@ -19,6 +19,7 @@ const props = defineProps<{
 .red-button {
   border-radius: 32px;
   background-color: #dd2242;
+  outline: transparent;
   color: #fff;
   font-family: 'DMSans', sans-serif;
   font-size: 18px;
