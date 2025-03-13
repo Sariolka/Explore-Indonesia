@@ -1,15 +1,15 @@
 <script setup lang="ts">
 const props = defineProps<{
-  number: string
-  title: string
-  description: string
-}>()
+  number: string;
+  title: string;
+  description: string;
+}>();
 </script>
 
 <template>
   <li class="hero-item">
     <span class="hero-item__number">{{ number }}</span>
-    <h3 class="hero-item__title">{{ title }}</h3>
+    <h2 class="hero-item__title">{{ title }}</h2>
     <p class="hero-item__description">{{ description }}</p>
   </li>
 </template>

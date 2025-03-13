@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import facebook from '@/images/icons/facebook.png'
-import google from '@/images/icons/google.png'
-import linkedin from '@/images/icons/linkedin.png'
-import logo from '@/images/logo-footer.svg'
-import up from '@/images/icons/union.svg'
-const computerYear = new Date().getFullYear()
+import facebook from '@/images/icons/facebook.png';
+import google from '@/images/icons/google.png';
+import linkedin from '@/images/icons/linkedin.png';
+import logo from '@/images/logo-footer.svg';
+import up from '@/images/icons/union.svg';
+const computerYear = new Date().getFullYear();
 </script>
 
 <template>

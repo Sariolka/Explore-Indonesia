@@ -1,23 +1,23 @@
 <script setup lang="ts">
-import ButtonLearnMore from '@/components/ButtonRed.vue'
-import { ref } from 'vue'
+import ButtonLearnMore from '@/components/ButtonRed.vue';
+import { ref } from 'vue';
 
-const isTextShown1 = ref(false)
-const isTextShown2 = ref(false)
-const isTextShown3 = ref(false)
-const isTextShown4 = ref(false)
+const isTextShown1 = ref(false);
+const isTextShown2 = ref(false);
+const isTextShown3 = ref(false);
+const isTextShown4 = ref(false);
 
 const handleToggleText = (index: number) => {
   if (index === 1) {
-    isTextShown1.value = !isTextShown1.value
+    isTextShown1.value = !isTextShown1.value;
   } else if (index === 2) {
-    isTextShown2.value = !isTextShown2.value
+    isTextShown2.value = !isTextShown2.value;
   } else if (index === 3) {
-    isTextShown3.value = !isTextShown3.value
+    isTextShown3.value = !isTextShown3.value;
   } else if (index === 4) {
-    isTextShown4.value = !isTextShown4.value
+    isTextShown4.value = !isTextShown4.value;
   }
-}
+};
 </script>
 
 <template>
@@ -71,7 +71,7 @@ const handleToggleText = (index: number) => {
                     src="https://images.unsplash.com/photo-1521036445206-ceb73e2de4a6?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="plans image"
                   />
-                  <button class="plans__img-btn"></button>
+                  <button class="plans__img-btn" aria-label="play"></button>
                 </div>
 
                 <div class="plans__container">
@@ -150,6 +150,7 @@ const handleToggleText = (index: number) => {
       margin-right: auto;
       margin-left: auto;
       margin-bottom: 40px;
+      text-align: center;
     }
   }
 
@@ -189,6 +190,7 @@ const handleToggleText = (index: number) => {
     @media screen and (max-width: 719px) {
       font-size: 22px;
       line-height: 33px;
+      text-align: center;
     }
   }
 
@@ -280,6 +282,7 @@ const handleToggleText = (index: number) => {
       }
     }
   }
+
   &__container {
     display: flex;
     flex-direction: column;
@@ -373,6 +376,8 @@ const handleToggleText = (index: number) => {
 
     @media screen and (max-width: 719px) {
       margin-left: 0;
+      padding-left: 0;
+      justify-content: center;
     }
   }
 

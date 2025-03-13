@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import ButtonRed from '@/components/ButtonRed.vue'
-import HeroItem from '@/components/HeroItem.vue'
+import ButtonRed from '@/components/ButtonRed.vue';
+import HeroItem from '@/components/HeroItem.vue';
 </script>
 
 <template>
@@ -63,7 +63,7 @@ import HeroItem from '@/components/HeroItem.vue'
           />
         </ul>
         <div class="hero__video">
-          <button class="hero__play"></button>
+          <button class="hero__play" aria-label="play"></button>
         </div>
       </div>
     </div>
@@ -92,6 +92,10 @@ import HeroItem from '@/components/HeroItem.vue'
 
     @media screen and (max-width: 719px) {
       padding: 50px 35px 28px 20px;
+      margin-bottom: 0;
+    }
+    @media screen and (max-width: 479px) {
+      padding: 50px 10px 28px 5px;
       margin-bottom: 0;
     }
   }
@@ -299,6 +303,10 @@ import HeroItem from '@/components/HeroItem.vue'
     @media screen and (max-width: 719px) {
       width: 314px;
       padding-left: 30px;
+    }
+
+    @media screen and (max-width: 330px) {
+      width: 100%;
     }
   }
 

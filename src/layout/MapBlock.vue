@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import ButtonRed from '@/components/ButtonRed.vue'
-import map1 from '@/images/map1.png'
-import map2 from '@/images/map2.png'
+import ButtonRed from '@/components/ButtonRed.vue';
+import map1 from '@/images/map1.png';
+import map2 from '@/images/map2.png';
 </script>
 
 <template>
