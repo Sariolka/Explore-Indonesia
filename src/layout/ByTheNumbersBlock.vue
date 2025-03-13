@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import StatisticItem from '@/components/StatisticItem.vue'
+import StatisticItem from '@/components/StatisticItem.vue';
 
 const data = [
   {
@@ -14,7 +14,7 @@ const data = [
     title: '30+',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo magna et libero.',
   },
-]
+];
 </script>
 
 <template>
@@ -67,6 +67,7 @@ const data = [
       margin-bottom: 37px;
     }
   }
+
   &__description {
     font-family: 'DMSans', sans-serif;
     font-size: 18px;
@@ -102,7 +103,9 @@ const data = [
 
   &__item {
     width: 300px;
-
+    @media screen and (max-width: 330px) {
+      width: 250px;
+    }
     &:first-child {
       margin-right: 150px;
       @media screen and (max-width: 1279px) {
@@ -127,6 +130,9 @@ const data = [
       width: 380px;
       @media screen and (max-width: 719px) {
         width: 300px;
+      }
+      @media screen and (max-width: 330px) {
+        width: 250px;
       }
     }
   }

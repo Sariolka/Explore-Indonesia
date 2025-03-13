@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import art from '@/images/art1.png'
-import ButtonLearnMore from '@/components/ButtonRed.vue'
+import art from '@/images/art1.png';
+import ButtonLearnMore from '@/components/ButtonRed.vue';
 </script>
 
 <template>

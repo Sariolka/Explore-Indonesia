@@ -1,16 +1,16 @@
 <script setup lang="ts">
 const props = defineProps<{
-  image: string
-  title: string
-  description: string
-}>()
+  image: string;
+  title: string;
+  description: string;
+}>();
 </script>
 
 <template>
   <div class="card">
     <div class="card__video-container">
       <img class="card__video" :src="image" :alt="title" />
-      <button class="card__btn"></button>
+      <button class="card__btn" aria-label="play"></button>
     </div>
 
     <div class="card__content">
@@ -44,6 +44,11 @@ const props = defineProps<{
 
     @media screen and (max-width: 1366px) {
       max-width: 314px;
+      aspect-ratio: 314/176;
+    }
+
+    @media screen and (max-width: 330px) {
+      max-width: 270px;
       aspect-ratio: 314/176;
     }
   }

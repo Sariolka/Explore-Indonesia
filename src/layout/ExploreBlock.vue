@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import ByTheNumbersBlock from '@/layout/ByTheNumbersBlock.vue'
-import 'vue3-carousel/carousel.css'
-import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
-import img1 from '@/images/1.jpg'
-import img2 from '@/images/2.jpg'
-import img3 from '@/images/3.jpg'
-import img4 from '@/images/4.jpg'
-import img5 from '@/images/5.jpg'
-const data = [img1, img4, img5, img2, img3]
+import ByTheNumbersBlock from '@/layout/ByTheNumbersBlock.vue';
+import 'vue3-carousel/carousel.css';
+import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
+import img1 from '@/images/1.jpg';
+import img2 from '@/images/2.jpg';
+import img3 from '@/images/3.jpg';
+import img4 from '@/images/4.jpg';
+import img5 from '@/images/5.jpg';
+const data = [img1, img4, img5, img2, img3];
 const carouselConfig = {
   itemsToShow: 3,
   wrapAround: false,
@@ -22,7 +22,7 @@ const carouselConfig = {
       itemsToShow: 1,
     },
   },
-}
+};
 </script>
 
 <template>
@@ -121,6 +121,10 @@ const carouselConfig = {
     @media screen and (max-width: 819px) {
       left: -6px;
     }
+
+    @media screen and (max-width: 330px) {
+      left: 0;
+    }
   }
 
   &::v-deep(.carousel__icon) {
@@ -134,6 +138,10 @@ const carouselConfig = {
     height: 45px;
     @media screen and (max-width: 819px) {
       left: 88%;
+    }
+
+    @media screen and (max-width: 330px) {
+      left: 83%;
     }
   }
 }
@@ -159,6 +167,10 @@ const carouselConfig = {
   @media screen and (max-width: 1300px) {
     width: 314px;
     height: 200px;
+  }
+
+  @media screen and (max-width: 479px) {
+    width: 250px;
   }
 }
 </style>
