@@ -219,6 +219,7 @@ import HeroItem from '@/components/HeroItem.vue';
     background-position: center;
     background-size: cover;
     cursor: pointer;
+    outline: transparent;
 
     &_type-search {
       width: 30px;
